@@ -1,0 +1,12 @@
+<li class="nav-dropdown-container learn">
+  <a class="nav-link<%- page.path.match(/\/(guide(?!\/team.html$)|api|style-guide|examples|cookbook)(\/|$)/) ? ' current' : '' %>">General</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="<%- url_for("/general/values.html") %>" class="nav-link<%- page.path.match(/\/general\/values(\/|$)/) ? ' current' : '' %>">Values</a></li>
+      <li><a href="<%- url_for("/general/communication.html") %>" class="nav-link<%- page.path.match(/\/general\/communication(\/|$)/) ? ' current' : '' %>">Communication</a></li>
+      <li><a href="<%- url_for("/general/security.html") %>" class="nav-link<%- page.path.match(/\/general\/security(\/|$)/) ? ' current' : '' %>">Security</a></li>
+      <li><a href="<%- url_for("/general/leadership.html") %>" class="nav-link<%- page.path.match(/\/general\/leadership(\/|$)/) ? ' current' : '' %>">Leadership</a></li>
+      <li><a href="<%- url_for("/general/tools-and-tips.html") %>" class="nav-link<%- page.path.match(/\/general\/tools-and-tips(\/|$)/) ? ' current' : '' %>">Tools and tips</a></li>
+    </ul></li>
+  </ul>
+</li>

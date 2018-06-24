@@ -1,0 +1,14 @@
+version: '3'
+services:
+  handbook-builder:
+    image: harobed/handbook-builder:latest
+    volumes:
+      - ./production/public/:/code/public/
+      - ./scaffolds/:/code/scaffolds/
+      - ./source/:/code/source/
+      - ./themes/:/code/themes/
+      - ./_config.yml:/code/_config.yml
+      - ./package.json:/code/package.json
+    command: npm start
+    ports:
+      - 4000:4000
